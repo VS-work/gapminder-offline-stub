@@ -7,7 +7,7 @@ let mainWindow;
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 520,
+    width: 530,
     height: 350,
   });
 
