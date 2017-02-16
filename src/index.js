@@ -8,11 +8,11 @@ const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 520,
-    height: 500,
+    height: 350,
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/index-${process.platform}.html`);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();

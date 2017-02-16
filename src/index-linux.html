@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gapminder Offline</title>
+    <link href="./gapminder-tools.css" rel="stylesheet" type="text/css">
+    <script>
+       var electron = require('electron');
+    </script>
+  </head>
+  <body>
+<img src="./logo.png" width="500">
+<div style="padding: 20px;">
+
+<div>
+Your current version is too old for automatic update. Please download new version (direct link below) and install it
+<a href="#" class="one" onclick="gourl('https://s3-eu-west-1.amazonaws.com/gapminder-offline/0.70.16/Gapminder%20Offline-linux.zip')">from here</a>
+(https://s3-eu-west-1.amazonaws.com/gapminder-offline/0.70.16/Gapminder Offline-linux.zip)
+</div>
+
+
+<div style="margin-top: 20px">
+<i>Please contact with <a href onclick="gourl('mailto:konzeptmeister@gmail.com')">our support team (konzeptmeister@gmail.com)</a> if you have any trouble with installation.</i>
+</div>
+
+
+</div>
+
+<script>
+function gourl(url) {
+  electron.shell.openExternal(url);
+}
+</script>
+  </body>
+</html>
